@@ -1,0 +1,58 @@
+<section class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md md:max-w-lg">
+    <div class="text-xl font-semibold text-blue-500 mb-5" [routerLink]="['/profile']">
+      &lt; Profile
+    </div>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Edit Profile</h2>
+
+    <form>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Username -->
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-1"
+            >Username</label
+          >
+          <input
+            type="text"
+            class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter username"
+          />
+        </div>
+
+        <!-- User ID -->
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-1"
+            >User ID</label
+          >
+          <input
+            type="text"
+            class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter User ID"
+          />
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="mt-4">
+        <label class="block text-gray-700 text-sm font-semibold mb-1"
+          >Bio</label
+        >
+        <textarea
+          class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          rows="4"
+          placeholder="Tell us about yourself..."
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          Save Changes
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
